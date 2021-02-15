@@ -1,0 +1,42 @@
+{
+  "status": {
+    "timestamp": "2021-02-15T00:25:19.800Z",
+    "error_code": 0,
+    "error_message": null,
+    "elapsed": 16,
+    "credit_count": 1,
+    "notice": null
+  },
+  "data": {
+    "BTC": {
+      "id": 1,
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "slug": "bitcoin",
+      "num_market_pairs": 9677,
+      "date_added": "2013-04-28T00:00:00.000Z",
+      "tags": [ "mineable", "pow", "sha-256", "store-of-value", "state-channels", "coinbase-ventures-portfolio", "three-arrows-capital-portfolio", "polychain-capital-portfolio" ],
+      "max_supply": 21000000,
+      "circulating_supply": 18628987,
+      "total_supply": 18628987,
+      "is_active": 1,
+      "platform": null,
+      "cmc_rank": 1,
+      "is_fiat": 0,
+      "last_updated": "2021-02-15T00:24:02.000Z",
+      "quote": {
+        "USD": {
+          "price": 48689.956894335926,
+          "volume_24h": 70876673620.9531,
+          "percent_change_1h": -0.67811641,
+          "percent_change_24h": 3.1933768,
+          "percent_change_7d": 24.90713013,
+          "percent_change_30d": 33.43907526,
+          "market_cap": 907044574015.1443,
+          "last_updated": "2021-02-15T00:24:02.000Z"
+        }
+      }
+    }
+  }
+}
+

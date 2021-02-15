@@ -1,0 +1,47 @@
+{
+  "status": {
+    "timestamp": "2021-02-15T00:39:17.659Z",
+    "error_code": 0,
+    "error_message": null,
+    "elapsed": 21,
+    "credit_count": 1,
+    "notice": null
+  },
+  "data": {
+    "AAA": {
+      "id": 3287,
+      "name": "Abulaba",
+      "symbol": "AAA",
+      "slug": "abulaba",
+      "num_market_pairs": 2,
+      "date_added": "2018-09-14T00:00:00.000Z",
+      "tags": [],
+      "max_supply": null,
+      "circulating_supply": 15090818.10226452,
+      "total_supply": 397000000,
+      "platform": {
+        "id": 1027,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum",
+        "token_address": "0xd938137e6d96c72e4a6085412ada2dad78ff89c4"
+      },
+      "is_active": 1,
+      "cmc_rank": 2287,
+      "is_fiat": 0,
+      "last_updated": "2021-02-15T00:39:04.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.00026173861061,
+          "volume_24h": 0,
+          "percent_change_1h": -0.82077947,
+          "percent_change_24h": 3.03959134,
+          "percent_change_7d": 24.01755488,
+          "percent_change_30d": 30.25790692,
+          "market_cap": 3949.849763054952,
+          "last_updated": "2021-02-15T00:39:04.000Z"
+        }
+      }
+    }
+  }
+}

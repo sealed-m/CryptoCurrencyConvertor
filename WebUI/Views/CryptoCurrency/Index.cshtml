@@ -1,0 +1,63 @@
+﻿@model List<Application.Contract.Responses.CryptoCurrencyResponse>
+
+@{ ViewData["Title"] = "List of currencies"; }
+
+
+<p>
+    <a asp-action="Create">Add a new Crypto Currency</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Crypto Currency Code
+            </th>
+            <th>
+                Currency Quotes
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Code)
+                </td>
+
+                <td>
+                    @foreach (var quotePrice in item.QuoteCurrenciesResponse)
+                    {
+                        if (quotePrice.HasError)
+                        {
+                            <h5>
+                                <span class="badge badge-danger">
+                                    @Html.DisplayFor(modelItem => quotePrice.CurrencyCode) :
+                                    @Html.DisplayFor(modelItem => quotePrice.ErrorMessage)
+                                    &nbsp;
+                                </span>
+                            </h5>
+                        }
+                        else
+                        {
+                            <h5>
+                                <span class="badge badge-info">
+                                    @Html.DisplayFor(modelItem => quotePrice.CurrencyCode) :
+                                    @Html.DisplayFor(modelItem => quotePrice.Price)
+                                    &nbsp;
+                                </span>
+                            </h5>
+                        }
+
+                    }
+                </td>
+                <td>
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
